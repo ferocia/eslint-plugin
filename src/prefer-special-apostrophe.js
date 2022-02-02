@@ -25,8 +25,6 @@ const findBadQuotes = text => {
 module.exports = {
   meta: {
     messages: {
-      // this is literally the rule we're running in
-      // eslint-disable-next-line local/prefer-special-apostrophe
       preferSpecial: "Prefer `’` over `'` for apostrophes.",
     },
     fixable: true,

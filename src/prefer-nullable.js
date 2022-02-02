@@ -1,15 +1,19 @@
 module.exports = {
   meta: {
     messages: {
-      preferNullable: 'Prefer `Nullable<{{name}}>` over `{{name}} | null | undefined`.',
+      preferNullable:
+        'Prefer `Nullable<{{name}}>` over `{{name}} | null | undefined`.',
     },
     fixable: true,
   },
+
   create(context) {
     const report = node => {
       const source = context.getSourceCode();
       const type = source.getText(
-        node.types.find(({type}) => type !== 'TSNullKeyword' && type !== 'TSUndefinedKeyword')
+        node.types.find(
+          ({type}) => type !== 'TSNullKeyword' && type !== 'TSUndefinedKeyword',
+        ),
       );
 
       context.report({

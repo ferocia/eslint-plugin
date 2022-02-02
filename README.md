@@ -10,8 +10,17 @@ yarn add --dev ferocia/eslint-plugin#GIT_COMMIT_HASH
 
 ## Configure
 
+In your ESLint config file...
+
 ```js
+plugins: [
+  // ...
+  '@ferocia/eslint-plugin',
+]
+
 rules: {
+  // ...
+
   // Enforce `Readonly<{...}>` over `{readonly ...}` when there are multiple props.
   '@ferocia/prefer-generic-readonly': 'error',
 
@@ -23,4 +32,20 @@ rules: {
   // to your `global.d.ts`.
   '@ferocia/prefer-nullable': 'error',
 }
+```
+
+## Development
+
+To work on this, check out the [ESLint Plugin docs](https://eslint.org/docs/developer-guide/working-with-plugins).
+
+To run the tests in watch mode, run:
+
+```bash
+yarn dev
+```
+
+To format all code, run:
+
+```bash
+yarn format
 ```

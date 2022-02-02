@@ -1,17 +1,15 @@
 name: CI
 on:
-  - push:
-      branches: [main]
-  - pull_request:
-      branches: [main]
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Install
-        run: yarn
-      - name: Lint
-        run: yarn lint
+        run: yarn install
       - name: Test
         run: yarn test
