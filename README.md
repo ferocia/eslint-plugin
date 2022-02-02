@@ -49,3 +49,9 @@ To format all code, run:
 ```bash
 yarn format
 ```
+
+## Publishing
+
+1. Bump the `version` in `package.json` and commit to `main`.
+1. Create a [new release](https://github.com/ferocia/eslint-plugin/releases/new), creating a new tag with the same value as the `package.json`. Publish.
+1. An [action](https://github.com/ferocia/eslint-plugin/actions/workflows/publish.yml) will be triggered to automatically publish the package.
