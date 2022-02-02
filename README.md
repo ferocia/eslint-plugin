@@ -10,6 +10,8 @@ yarn add --dev ferocia/eslint-plugin#GIT_COMMIT_HASH
 
 ## Configure
 
+In your ESLint config file...
+
 ```js
 rules: {
   // Enforce `Readonly<{...}>` over `{readonly ...}` when there are multiple props.
