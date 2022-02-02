@@ -1,8 +1,12 @@
 {
-  "name": "@ferocia/eslint-plugin",
+  "name": "@ferocia-oss/eslint-plugin",
   "version": "1.0.0",
   "description": "Shareable ESLint Rules",
   "main": "src/index.js",
+  "files": [
+    "src/*.js",
+    "!src/*.spec.js"
+  ],
   "scripts": {
     "test": "yarn format:check && jest",
     "dev": "jest --watch",
