@@ -4,10 +4,6 @@
 
 ## Install
 
-Pick the latest git commit hash and substitute it below.
-
-To install via npm:
-
 ```bash
 yarn add --dev @ferocia-oss/eslint-plugin
 ```
@@ -19,22 +15,22 @@ In your ESLint config file...
 ```js
 plugins: [
   // ...
-  '@ferocia/eslint-plugin',
+  '@ferocia-oss',
 ]
 
 rules: {
   // ...
 
   // Enforce `Readonly<{...}>` over `{readonly ...}` when there are multiple props.
-  '@ferocia/prefer-generic-readonly': 'error',
+  '@ferocia-oss/prefer-generic-readonly': 'error',
 
   // Enforce use of smart-quotes.
-  '@ferocia/prefer-special-apostrophe': 'error',
+  '@ferocia-oss/prefer-special-apostrophe': 'error',
 
   // Enforce `Nullable<X>` over `X | null | undefined`.
   // requires adding `declare type Nullable<T> = T | null | undefined`
   // to your `global.d.ts`.
-  '@ferocia/prefer-nullable': 'error',
+  '@ferocia-oss/prefer-nullable': 'error',
 }
 ```
 
