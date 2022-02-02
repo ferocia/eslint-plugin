@@ -6,16 +6,10 @@
 
 Pick the latest git commit hash and substitute it below.
 
-To install via HTTPS:
+To install via npm:
 
 ```bash
-yarn add --dev https://github.com/ferocia/eslint-plugin.git#GIT_COMMIT_HASH
-```
-
-Or SSH:
-
-```bash
-yarn add --dev ferocia/eslint-plugin.git#GIT_COMMIT_HASH
+yarn add --dev @ferocia-oss/eslint-plugin
 ```
 
 ## Configure

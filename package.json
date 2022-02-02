@@ -18,7 +18,7 @@
   },
   "repository": "git@github.com:ferocia/eslint-plugin.git",
   "author": "Lucas Azzola <lucas.azzola@ferocia.com.au>",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "prettier": {
     "trailingComma": "all",
     "arrowParens": "avoid",
