@@ -44,12 +44,6 @@ To run the tests in watch mode, run:
 yarn dev
 ```
 
-To format all code, run:
-
-```bash
-yarn format
-```
-
 ## Publishing
 
 1. Bump the `version` in `package.json` and commit to `main`.
